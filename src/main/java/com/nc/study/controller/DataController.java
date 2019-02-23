@@ -36,9 +36,9 @@ public class DataController {
     }
 
 
-    @RequestMapping("/submit")
-    public String submitFile(MultipartFile multipartFile) throws Exception {
-        dataService.submitFile(multipartFile.getInputStream());
-        return "sucss";
+    @RequestMapping("/importData")
+    public String submitFile(MultipartFile file) throws Exception {
+        dataService.submitFile(file.getInputStream());
+        return "succ";
     }
 }
