@@ -25,7 +25,7 @@ public class DataController {
 
     @RequestMapping("/import")
     public String importPage() {
-        return "importPage";
+        return "importpage";
     }
 
 
