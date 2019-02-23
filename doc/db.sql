@@ -17,7 +17,7 @@ create table data(
     fzrq VARCHAR(255),
     fbls VARCHAR(255),
     index idx_code(code)
-);
+)ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='data表';
 
 insert into data values (null,
 'qwertywws',
