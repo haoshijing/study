@@ -29,7 +29,7 @@ public class DataPo implements Serializable {
     private String zczbj;
     private String zsbh;
     private String fzjg;
-    private Long zbls;
+    private String zbls;
     private String zzfw;
     private String frdb;
     private String jjxz;
