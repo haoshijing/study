@@ -16,9 +16,9 @@ public class DataController {
     @Autowired
     private DataService dataService;
 
-    @RequestMapping("/getByCode")
-    public String queryByCode(String code, ModelMap modelMap) {
-        DataPo dataPo = dataService.queryByCode(code);
+    @RequestMapping("/CertQRCodeQuery.aspx?")
+    public String queryByCode(String ID, ModelMap modelMap) {
+        DataPo dataPo = dataService.queryByCode(ID);
         modelMap.addAttribute("data", dataPo);
         return "detail";
     }
