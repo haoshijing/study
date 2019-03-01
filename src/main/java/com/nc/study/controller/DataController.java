@@ -10,13 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
 
 @Controller
-@RequestMapping("/data")
 public class DataController {
 
     @Autowired
     private DataService dataService;
 
-    @RequestMapping("/CertQRCodeQuery.aspx?")
+    @RequestMapping("/CertQRCodeQuery.aspx")
     public String queryByCode(String ID, ModelMap modelMap) {
         DataPo dataPo = dataService.queryByCode(ID);
         modelMap.addAttribute("data", dataPo);
